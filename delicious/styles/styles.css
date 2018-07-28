@@ -29,6 +29,14 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-align: left;
+  margin: 0;
+}
+
 p {
   font-family: 'Lora', serif;
   font-size: 1.1rem;
@@ -44,9 +52,13 @@ p {
   margin: 0 auto;
 }
 
+.wrapperLarge {
+  width: 85%;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
-  max-height: 100%;
 }
 /* ===header styles=== */
 
@@ -134,10 +146,14 @@ header li a {
 }
 
 /* ====details section==== */
-
 .detailsLeft, .detailsRight {
   float: left;
   width: 50%;
+}
+
+.detailsRight {
+  padding: 5.6% 20px;
+  background-color: #f2f2f2;
 }
 
 .detailsRight ul {
@@ -146,12 +162,6 @@ header li a {
 
 .detailsRight li {
   list-style-type: none;
-}
-
-.detailsRight i {
-  font-size: 2.5rem;
-  float: left;
-  width: 20%;
 }
 
 .leftColumn, .rightColumn {
@@ -164,8 +174,160 @@ header li a {
   width: 80%;
 }
 
-.left1::before {
+.icons {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
-  content: "\f094"
+  position: relative;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.icons h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.icons p {
+  color: grey;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.left1::before {
+  content: "\f094";
+  position: absolute;
+  top:0;
+  left: -30px;
+}
+
+.left2::before {
+  content: "\f0f4";
+  position: absolute;
+  top:0;
+  left: -30px;
+}
+
+.left3::before {
+  content: "\f06c";
+  position: absolute;
+  top:0;
+  left: -30px;
+}
+
+.right1::before {
+  content: "\f2e7";
+  position: absolute;
+  top:0;
+  left: -30px;
+}
+
+.right2::before {
+  content: "\f000";
+  position: absolute;
+  top:0;
+  left: -30px;
+}
+
+.right3::before {
+  content: "\f2e5";
+  position: absolute;
+  top:0;
+  left: -30px;
+}
+
+/* ====About section=== */
+figure img {
+  width: 350px;
+  height: auto;
+}
+figure {
+  margin-bottom: 45px;
+}
+.aboutTable {
+  position: relative;
+  text-align: center;
+}
+.circle {
+  width: 125px;
+  height: auto;
+  position: absolute;
+  top: -70px;
+  right: 250px;
+}
+
+.about {
+  padding: 175px 0 100px 0;
+}
+
+.about p {
+  color: grey;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* ====photo gallery section=== */
+
+.photoGallery li {
+  width: 33.33%;
+  float: left;
+  list-style-type: none;
+}
+
+.photoGallery img {
+  height: 100%;
+}
+
+.photoGallery ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* ====testimonial sections==== */
+
+.testimonials {
+  background-color: #dded9a;
+  margin: 0;
+  padding: 150px 0;
+}
+.testimonials .wrapperLarge {
+  position: relative;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  font-family: 'Lora', serif;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 6rem;
+  position: absolute;
+  left: 120px;
+  top: 75px;
+  color: white;
+}
+    
+blockquote::after {
+  content: "”";
+  font-size: 6rem;
+  position: absolute;
+  right: 150px;
+  bottom: 10px;
+  color: white;
+}
+
+.testimonials i {
+  font-size: 2rem;
+  color: white;
+  padding: 15px;
+}
+
+.arrows {
+  margin: 0 auto;
+  width: 10%;
 }
