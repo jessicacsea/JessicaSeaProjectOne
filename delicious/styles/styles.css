@@ -37,6 +37,15 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 2.5rem;
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #64a604;
+  margin: 0;
+}
+
 p {
   font-family: 'Lora', serif;
   font-size: 1.1rem;
@@ -134,11 +143,13 @@ header li a {
 
 .popButton {
   background-color: #64a604;
-  padding: 10px;
+  padding: 10px 20px;
   border: #64a604 1px solid;
   color: white;
-  width: 100px;
+  width: 140px;
   margin: 0 auto;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 }
 
 .leftText p {
@@ -330,4 +341,91 @@ blockquote::after {
 .arrows {
   margin: 0 auto;
   width: 10%;
+}
+
+/* ===footer section==== */
+
+footer {
+  background-color: #2e2e2e;
+  margin: 0;
+}
+
+.endText, .endPosts, .endSubscribe {
+  float: left;
+  width: 33.33%;
+  padding: 100px 30px 75px;
+}
+
+footer p {
+  font-size: 1.1rem;
+  color: grey;
+  text-align: left;
+  line-height: 2;
+}
+footer a {
+  color: grey;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+footer h3 {
+  color: white;
+  padding-bottom: 10px;
+}
+.endBar {
+  clear: both;
+}
+
+.endPosts ul {
+  margin: 0;
+  padding: 0;
+}
+
+.endPosts li {
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+
+.endSubscribe p {
+  padding-bottom: 20px;
+}
+
+.endemailForm {
+  background-color: #999999;
+  border: #999999 1px solid;
+  padding: 7px 35px 7px 7px; 
+}
+
+.endbutton {
+  background-color: #64a604;
+  color: white;
+  border: #64a604 1px solid;
+  padding: 7px;
+  margin: 0;
+}
+
+form {
+  margin-bottom: 35px;
+}
+
+.socialIcons i {
+  font-size: 1.2rem;
+  color:white;
+  padding: 0 7px;
+  margin: 0;
+}
+
+/* ====endbar on footer==== */
+.endBar {
+  background-color: black;
+  padding: 3px 3px 3px 33px;
+}
+
+.endBar p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+.green {
+  color: #64a604;
 }
