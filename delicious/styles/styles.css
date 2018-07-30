@@ -515,7 +515,6 @@ article p {
   list-style-type: none;
   float: left;
   width: calc(( 100% / 3 ) - 20px );
-  display: inline-block;
   margin: 10px;
 }
 /* .post1, post2, .post3 {
@@ -605,4 +604,74 @@ input::placeholder {
 
 .leaveComm {
   margin-bottom: 100px;
+}
+
+/* ====CONTACT US PAGE STYLINGS==== */
+
+#contact {
+  background-image: url("../assets/contact-1.jpeg");
+}
+
+/* ===drop a line section=== */
+
+.dropLine {
+  float: left;
+  width: 40%;
+  margin-left: 20%;
+}
+
+.contactDetails {
+  float: left;
+  width: 40%;
+  padding: 0 13% 2% 3%;
+  background-color: #f6f6f6;
+}
+
+.dropLine h2, .contactDetails h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  padding: 50px 0 25px 0;
+}
+
+.dropLine input {
+  border: #f6f6f6 1px solid;
+  background-color: #f6f6f6;
+}
+
+.dropLine #Name, .dropLine #email {
+  width: calc((100% / 2 ) - 12px );
+}
+
+.dropLine #subject {
+  width: 98%;
+}
+
+.dropLine #message {
+  width: 98%;
+  height: 250px;
+}
+
+.dropLine h3 {
+  font-weight: 700;
+  color: #64a604;
+  margin-top: 30px;
+  margin-bottom: 75px;
+}
+
+.contactPage p {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.contactDetails h3 {
+  margin: 45px 0 20px 0;
+}
+
+.notWork {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.space {
+  padding-bottom: 20px;
 }

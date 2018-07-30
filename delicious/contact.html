@@ -13,7 +13,7 @@
 <body>
   <header id="contact">
     <h1>Delicious</h1>
-    <nav>
+    <nav class="clearfix">
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -26,16 +26,23 @@
         </li>
         <li>Shop</li>
         <li>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html"><span class="green">Contact</span></a>
+        </li>
+        <li class="shoppingCounter">
+          <i class="fas fa-shopping-bag"></i>
+          <div class="counter">
+            <p>2</p>
+          </div>
+        </li>
+        <li>
+          <i class="fas fa-search"></i>
         </li>
       </ul>
-      <i class="fas fa-shopping-bag"></i>
-      <i class="fas fa-search"></i>
     </nav>
   </header>
 
-  <section class="commentPage">
-    <div class="wrapperLarge">
+  <section class="contactPage">
+    <div class="clearfix">
       <div class="dropLine">
         <h2>Drop us a line</h2>
         <input type="text" id="Name" name="Name" placeholder="Your Name">
@@ -44,7 +51,7 @@
         <div></div>
         <input type="text" id="message" name="Message" placeholder="Message">
         <div></div>
-        <input type="submit" value="Submit Message">
+        <h3>Send Message</h3>
       </div>
 
       <div class="contactDetails">
@@ -53,13 +60,14 @@
 
         <h3>Working Hours</h3>
         <p>Mon - Fri: 8:00am - 5:30pm</p>
-        <p>Not working Saturday and Sunday!</p>
+        <p class="notWork">Not working Saturday and Sunday!</p>
 
         <h3>Contact Info</h3>
-        <p>A delicious restaurant <div></div>
-          Toronto, Ontario</p>
-        
-        <p>restaurant@delicious.com</p><div></div>
+        <p>A delicious restaurant</p><div></div>
+        <p class="space">Toronto, Ontario</p>
+        <div></div>
+        <p class="space">restaurant@delicious.com</p>
+        <div></div>
         <p>(123) 456-7890</p>
       </div>
     </div>
@@ -72,18 +80,21 @@
   </div>
 
   <footer>
-    <div class="wrapperLarge">
-  
+    <div class="wrapperSmall clearfix">
       <div class="endText">
         <h4>Delicious</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem libero cumque quasi doloribus sed ad praesentium
-          dolor accusantium. Doloremque animi quas, recusandae saepe assumenda, rem dolor dicta.</p>
-        <p>343 Address Address
-          <div></div>
-          Toronto, ON</p>
-        <a href="mailto:email@email.com">email address</a>
+          dolor accusantium.</p>
+        <p>343 Address Address</p>
         <div></div>
-        <a href="tel:1234567890">(123)4567890</a>
+        <p>Toronto, ON</p>
+        <p>
+          <a href="mailto:email@email.com">email address</a>
+        </p>
+        <div></div>
+        <p>
+          <a href="tel:1234567890">(123)4567890</a>
+        </p>
       </div>
   
       <div class="endPosts">
@@ -112,29 +123,32 @@
         </ul>
       </div>
   
-      <form class="endSubscribe">
-        <h3>Subscribe now</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ab eaque delectus enim laboriosam blanditiis consectetur.</p>
-        <input type="text" class="endemailForm" name="email" placeholder="email address">
-        <input type="submit" class="endbutton" value="-->">
-      </form>
-      <div class="socialIcons">
-        <a href="https://www.facebook.com/">
-          <i title="Facebook page" class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com/" class="fab fa-twitter">
-          </i>
-        </a>
-        <a href="https://www.instagram.com/">
-          <i title="instagram page" class="fab fa-instagram"></i>
-        </a>
-      </div>
-  
-      <div class="endBar">
-        <div class="wrapperLarge clearfix">
-          <h4>Copyright © 2018 by
-            <span class="green">POLAR</span>. All rights reserved.</h4>
+      <div class="endSubscribe">
+        <form>
+          <h3>Subscribe now</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ab eaque delectus enim.</p>
+          <input type="text" class="endemailForm" name="email" placeholder="email address">
+          <input type="submit" class="endbutton" value="-->">
+        </form>
+        <div class="socialIcons">
+          <a href="https://www.facebook.com/">
+            <i title="Facebook page" class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/">
+            <i title="twitter feed" class="fab fa-twitter">
+            </i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i title="instagram page" class="fab fa-instagram"></i>
+          </a>
         </div>
+      </div>
+    </div>
+  
+    <div class="endBar">
+      <div class="wrapperSmall clearfix">
+        <p>Copyrights © 2018 by
+          <span class="green">POLAR</span>. All rights reserved.</p>
       </div>
     </div>
   </footer>
