@@ -71,7 +71,7 @@ p {
 }
 
 .wrapperLarge {
-  width: 85%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -213,47 +213,33 @@ header li a {
   font-weight: 400;
   font-size: 1rem;
 }
-
-.left1::before {
-  content: "\f094";
+.icons::before {
   position: absolute;
   top:0;
   left: -30px;
+}
+.left1::before {
+  content: "\f094";
 }
 
 .left2::before {
   content: "\f0f4";
-  position: absolute;
-  top:0;
-  left: -30px;
 }
 
 .left3::before {
   content: "\f06c";
-  position: absolute;
-  top:0;
-  left: -30px;
 }
 
 .right1::before {
   content: "\f2e7";
-  position: absolute;
-  top:0;
-  left: -30px;
 }
 
 .right2::before {
   content: "\f000";
-  position: absolute;
-  top:0;
-  left: -30px;
 }
 
 .right3::before {
   content: "\f2e5";
-  position: absolute;
-  top:0;
-  left: -30px;
 }
 
 /* ====About section=== */
@@ -292,15 +278,17 @@ figure {
   width: 33.33%;
   float: left;
   list-style-type: none;
-}
-
-.photoGallery img {
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .photoGallery ul {
   margin: 0;
   padding: 0;
+}
+
+.photoGallery img, .popRight img, .commentBanner img {
+  display: block;
 }
 
 /* ====testimonial sections==== */
@@ -343,7 +331,7 @@ blockquote::after {
 }
 
 .testimonials i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
   padding: 15px;
 }
@@ -406,14 +394,16 @@ footer h3 {
   background-color: #999999;
   border: #999999 1px solid;
   padding: 7px 35px 7px 7px; 
+  margin-right: 0;
 }
 
-.endbutton {
+button {
   background-color: #64a604;
   color: white;
   border: #64a604 1px solid;
   padding: 7px;
   margin: 0;
+  width: 35px;
 }
 
 form {
@@ -425,6 +415,25 @@ form {
   color:white;
   padding: 0 7px;
   margin: 0;
+}
+
+input[type=submit] {
+  background-image: url("../assets/arrow-right-solid.svg");
+  background-repeat: no-repeat
+}
+
+.lines {
+  position: relative;
+}
+
+.lines::after {
+  content: "";
+  width: 270px;
+  height: 1px;
+  background-color: grey;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 /* ====endbar on footer==== */
@@ -517,21 +526,10 @@ article p {
   width: calc(( 100% / 3 ) - 20px );
   margin: 10px;
 }
-/* .post1, post2, .post3 {
-  float: left;
-  width: calc( 100% / 3 );
-  display: inline-block;
-  
-} */
 
 .post1 img, .post2 img, .post3 img {
   object-fit: fill;
-  /* min-width: 370px; */
   height: 191px;
-}
-
-.post1 img, .post3 img {
-  min-width: 370px;
 }
 
 /* ====Comment section=== */
@@ -556,6 +554,15 @@ article p {
   margin-left: 20px;
   background-color: #efefef;
   padding: 15px;
+  position: relative;
+}
+
+.commentBox i {
+  position: absolute;
+  top: 0;
+  left: -11px;
+  font-size: 3rem;
+  color: #efefef;
 }
 
 .commentBox p, .commentBox h5 {
@@ -601,9 +608,27 @@ input::placeholder {
   font-family: 'Lora', serif;
   line-height: 1;
 }
-
+.blogButton {
+  width: 125px;
+  padding: 10px;
+  text-transform: uppercase;
+}
 .leaveComm {
   margin-bottom: 100px;
+}
+
+.longLines {
+  position: relative;
+}
+
+.longLines::after {
+  content: "";
+  width: 950px;
+  height: 1px;
+  background-color: grey;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
 }
 
 /* ====CONTACT US PAGE STYLINGS==== */
@@ -651,11 +676,10 @@ input::placeholder {
   height: 250px;
 }
 
-.dropLine h3 {
+.dropLine h3, .dropLine i {
   font-weight: 700;
   color: #64a604;
-  margin-top: 30px;
-  margin-bottom: 75px;
+  margin-top: 20px;
 }
 
 .contactPage p {
