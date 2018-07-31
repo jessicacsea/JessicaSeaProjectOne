@@ -4,14 +4,23 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif; */
+/* colors
+#64a604;
+#666666;
+#dded9a;
+#2e2e2e;
+white;
+#999999;
+#f6f6f6;
+lightgrey; */
+
 html {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
 }
-/* ===text styles=== */
-
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Lora', serif; */
+/* ===TEXT STYLING=== */
 
 h1 {
   margin: 0;
@@ -48,7 +57,7 @@ h4 {
 
 h5 {
   font-size: 1.3rem;
-  color: grey;
+  color:#666666;
   text-transform: none;
   font-weight: 400;
   margin: 0;
@@ -63,27 +72,21 @@ p {
   line-height: 1.5;
 }
 
-/* ===general styles=== */
+/* ===GENERAL STYLES=== */
 
-.wrapperSmall {
+.wrapper {
   max-width: 75%;
-  margin: 0 auto;
-}
-
-.wrapperLarge {
-  max-width: 85%;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
 }
-/* ===header styles=== */
+/* ===HOME PAGE HEADER STYLES=== */
 
 header {
   background-image: url("../assets/home-1.jpeg");
   height: 85vh;
-  /* background-attachment: fixed; */
   background-position-y: 35%;
   background-size: cover;
 }
@@ -208,7 +211,7 @@ header li a {
 }
 
 .icons p {
-  color: grey;
+  color: #666666;
   text-align: left;
   font-weight: 400;
   font-size: 1rem;
@@ -267,7 +270,7 @@ figure {
 }
 
 .about p {
-  color: grey;
+  color: #666666;
   text-align: center;
   line-height: 18px;
 }
@@ -298,7 +301,7 @@ figure {
   margin: 0;
   padding: 150px 0;
 }
-.testimonials .wrapperLarge {
+.testimonials .wrapper {
   position: relative;
 }
 
@@ -360,12 +363,12 @@ footer {
 
 footer p {
   font-size: 1.3rem;
-  color: grey;
+  color: #666666;
   text-align: left;
   line-height: 2;
 }
 footer a {
-  color: grey;
+  color: #666666;
   text-decoration: none;
   font-size: 1.1rem;
 }
@@ -417,11 +420,6 @@ form {
   margin: 0;
 }
 
-input[type=submit] {
-  background-image: url("../assets/arrow-right-solid.svg");
-  background-repeat: no-repeat
-}
-
 .lines {
   position: relative;
 }
@@ -430,7 +428,7 @@ input[type=submit] {
   content: "";
   width: 270px;
   height: 1px;
-  background-color: grey;
+  background-color: #666666;
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -625,7 +623,7 @@ input::placeholder {
   content: "";
   width: 950px;
   height: 1px;
-  background-color: grey;
+  background-color: lightgrey;
   position: absolute;
   bottom: -18px;
   left: 0;
