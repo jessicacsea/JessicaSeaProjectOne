@@ -4,6 +4,19 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Lora', serif; */
 /* colors
@@ -19,19 +32,20 @@ lightgrey; */
 html {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 /* ===TEXT STYLING=== */
 
 h1 {
   margin: 0;
   padding: 15px 25px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 4.5rem;
 }
 
 h2 {
-  text-transform: uppercase;
   font-size: 3rem;
   letter-spacing: 1px;
   text-align: center;
@@ -39,7 +53,6 @@ h2 {
 }
 
 h3 {
-  text-transform: uppercase;
   font-size: 1.3rem;
   letter-spacing: 1px;
   text-align: left;
@@ -50,7 +63,6 @@ h4 {
   font-size: 3.8rem;
   text-align: left;
   letter-spacing: 1px;
-  text-transform: uppercase;
   color: #64a604;
   margin: 0;
 }
@@ -70,6 +82,7 @@ p {
   color: #666666;
   text-align: center;
   line-height: 1.5;
+  text-transform: none;
 }
 
 /* ===GENERAL STYLES=== */
@@ -281,17 +294,28 @@ figure {
   width: 33.33%;
   float: left;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  display: block;
 }
 
-.photoGallery ul {
+.photoGallery ul, .photoGallery p, .photoGallery li, .endPosts ul, .endPosts li {
   margin: 0;
   padding: 0;
 }
 
 .photoGallery img, .popRight img, .commentBanner img {
   display: block;
+}
+
+.photoGallery li:hover p {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  margin: 0;
+  padding: 0;
 }
 
 /* ====testimonial sections==== */
@@ -313,6 +337,7 @@ blockquote {
   width: 65%;
   margin: 0 auto;
   line-height: 25px;
+  text-transform: none;
 }
 
 blockquote::before {
@@ -378,15 +403,8 @@ footer h3 {
   font-size: 1.8rem;
 }
 
-.endPosts ul {
-  margin: 0;
-  padding: 0;
-}
-
 .endPosts li {
   list-style-type: none;
-  padding: 0;
-  margin:0;
 }
 
 .endSubscribe p {
@@ -696,4 +714,30 @@ input::placeholder {
 
 .space {
   padding-bottom: 20px;
+}
+
+.commentBanner {
+  position: relative;
+}
+
+.commentBanner p {
+  display: none;
+  transition: all .3s;
+}
+
+.commentBanner:hover p {
+  display: block;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  margin: 0;
+  padding-top: 10%;
+  font-size: 2.5rem;
+  color: white;
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  transition: all .3s;
 }
